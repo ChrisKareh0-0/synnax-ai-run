@@ -4,8 +4,9 @@
   "repository": "https://github.com/synnax-ai/interview-be-pr-assignment",
   "type": "module",
   "scripts": {
-    "build": "pnpm generate-validators && tsc -noEmit",
-    "generate-validators": "typia generate --input src/validators/types/templates --output src/validators/types/generated"
+    "prebuild": "mkdir -p src/validators/types/templates",
+    "generate-validators": "typia generate --input src/validators/types/templates --output src/validators/types/generated",
+    "build": "pnpm generate-validators && tsc -noEmit"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.656.0",

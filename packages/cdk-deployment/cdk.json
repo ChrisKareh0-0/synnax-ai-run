@@ -1,5 +1,5 @@
 {
-  "app": "npx tsx bin/cdk-deployment.ts",
+  "app": "npx tsx ./bin/cdk-deployment.ts",
   "requireApproval": "never",
   "watch": {
     "include": ["**"],

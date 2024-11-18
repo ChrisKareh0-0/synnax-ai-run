@@ -24,5 +24,8 @@
   },
   "lint-staged": {
     "*.{ts,js,tsx,cjs,md,yaml,json}": "prettier --write"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
